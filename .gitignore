@@ -22,3 +22,5 @@
 
 .byebug_history
 *~undo-tree~
+
+config/initializers/01_development_env.rb
