@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                  <%= image_tag gravatar_url(current_user.email, 300), alt:"profile image", class:"img-circle img-responsive center-block" %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-sm-offset-3 col-sm-6 center-text">
+                  <h2><%= @user.email %></h2>
+                  <p><strong>Created: </strong> <%= @user.created_at %></p>
+                  <p><strong>Last sign in: </strong> <%= @user.last_sign_in_at %></p>
+                  <p><strong>Sign ins: </strong> <%= @user.sign_in_count %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
