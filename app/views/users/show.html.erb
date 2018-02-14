@@ -39,11 +39,13 @@
                   <h2 class="text-center">Todo list</h2>
                   <table class="table">
                     <thead>
+                      <% if current_user == @user %>
                       <th>Finish</th>
+                      <% end %>
                       <th>Task</th>
                       <th>Expiration</th>
                     </thead>
-                      <%= render(@items) || "There is nothing in the todo list." %>
+                    <%= render(@items) || "There is nothing in the todo list." %>
                   </table>
                 </div>
               </div>
