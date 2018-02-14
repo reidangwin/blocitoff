@@ -1,8 +1,10 @@
 <%= form_for [@user, @item] do |f| %>
 
-    <%= f.text_field :name, class: 'form-control', placeholder: "Enter new item for todo list" %>
-
-  <div class="form-group">
+<div class="input-group">
+  <%= f.text_field :name, class: 'form-control', placeholder: "Enter new item for todo list" %>
+  <span class="input-group-btn">
     <%= f.submit "Save", class: 'btn btn-success' %>
-  </div>
+  </span>
+</div>
+
 <% end %>

@@ -1,1 +1,8 @@
-<li class="todo"><%= item.name %></li>
+<tr>
+  <div class="form-group">
+    <td class="form-check form-check-inline">
+      <input id="<%= item.id %>" type="checkbox" class="form-check-input">
+      <label for="<%= item.id %>" class="checkbox-inline"><%= item.name %></label>
+    </td>
+  </div>
+</tr>
