@@ -26,6 +26,7 @@ gem 'growlyflash'
 gem 'devise'
 gem 'devise-bootstrapped'
 gem 'pundit'
+gem 'whenever', require: false
 
 gem 'faker'
 
