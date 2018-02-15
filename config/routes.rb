@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get '/items/create'
 
+  get '/welcome/index', to: 'welcome#index'
+
   get '/users/show/(:id)', to: 'users#show', as: 'show_user'
 
   put '/users/show/(:id)', to: 'users#toggle_public', as: 'toggle_public'
