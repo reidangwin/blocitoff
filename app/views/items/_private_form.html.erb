@@ -1,0 +1,12 @@
+<%= form_for @user, remote: true, method: :put do |f| %>
+
+<div class="input-group">
+  <%= f.label :is_public, class: 'checkbox-inline' do %>
+    <%= f.check_box :is_public %> Public Tasks
+  <% end %>
+  <span class="input-group-btn">
+    <%= f.submit "Save", class: 'btn btn-success' %>
+  </span>
+</div>
+
+<% end %>
